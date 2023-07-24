@@ -20,7 +20,7 @@ A list of songs is displayed, with a control bar to move to the previous / next 
   - If there is no next song and the repeat mode is `Do not repeat`, then no song should be selected
   - if there is no next song and the repeat mode is `Repeat all Songs`, then the first song in the list should be selected
   - if the repeat mode is `Repeat track` then the same song should remain selected
-  - if no song is currently selected, then select the first song in the list
+  - if no song is currently selected then take no action
     <br>
     <br>
 
