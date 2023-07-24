@@ -11,6 +11,8 @@ A list of songs is displayed, with a control bar to move to the previous / next 
 
 - The repeat mode button should show the current repeat mode. The repeat mode should loop through the available modes then repeat from the start.
 
+- When the user clicks on a song, it should become selected.
+
 - When a song is selected, it should show as 'isActive' (style already created).
 
 - When `Next` is pressed, the next song should be selected.
