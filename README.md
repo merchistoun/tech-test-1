@@ -39,6 +39,10 @@ A list of songs is displayed, with a control bar to move to the previous / next 
 
 In the project directory, you can run:
 
+### `npm i`
+
+Downloads all the required packages.
+
 ### `npm start`
 
 Runs the app in the development mode.\
