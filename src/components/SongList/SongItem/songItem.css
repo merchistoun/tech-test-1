@@ -1,0 +1,27 @@
+.songItem {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+}
+
+.songItem_artist {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #ffffffd0;
+}
+
+.songItem_artist.active {
+  color: #40ff40d0;
+}
+
+.songItem_title {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #ffffffa0;
+}
+
+.songItem_title.active {
+  color: #40ff40a0;
+}
