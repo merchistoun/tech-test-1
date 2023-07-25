@@ -34,6 +34,7 @@
   border: 2px solid #ffffff80;
   background: black;
   color: white;
+  min-width: 10rem;
 
   &:hover {
     border: 2px solid #ffffffcc;

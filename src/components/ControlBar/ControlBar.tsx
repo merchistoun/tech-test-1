@@ -1,17 +1,20 @@
 import React from "react";
 import "./controlBar.css";
-import { RepeatType } from "../model";
+import { useSongContext } from "../../context/useSongContext";
 
 export const ControlBar = (): React.ReactElement => {
-  const artist = "~ Current Artist ~";
-  const title = "~ Current Title ~";
-  const repeatMode = RepeatType.None;
+  const {
+    selectedSong,
+    selectedRepeatType,
+    onToggleRepeat,
+    onNext,
+    onPrevious,
+  } = useSongContext();
 
-  const onClickPrevious = () => {};
-
-  const onClickNext = () => {};
-
-  const onClickRepeatMode = () => {};
+  const { title, artist } = selectedSong || {
+    artist: "~",
+    title: "Nothing selected",
+  };
 
   return (
     <div className="controlBar">
@@ -19,14 +22,14 @@ export const ControlBar = (): React.ReactElement => {
       <h2 className="controlBar_title">{title}</h2>
 
       <div className="controlBar_buttons">
-        <button className="controlBar_button" onClick={onClickPrevious}>
+        <button className="controlBar_button" onClick={onPrevious}>
           Previous
         </button>
-        <button className="controlBar_button" onClick={onClickNext}>
+        <button className="controlBar_button" onClick={onNext}>
           Next
         </button>
-        <button className="controlBar_button" onClick={onClickRepeatMode}>
-          {repeatMode}
+        <button className="controlBar_button" onClick={onToggleRepeat}>
+          {selectedRepeatType}
         </button>
       </div>
     </div>
