@@ -33,7 +33,7 @@ A list of songs is displayed, with a control bar to move to the previous / next 
     <br>
     <br>
 
-- If the custom hook is mounted from a component which is not wrapped in the Context, then and error should be thrown with the message `Component must be mounted within a SongContext`.
+- If the custom hook is mounted from a component which is not wrapped in the Context, then an error should be thrown with a console message `Component must be mounted within a SongContext`.
 
 ## Available Scripts
 
